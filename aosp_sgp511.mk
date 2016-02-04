@@ -19,6 +19,24 @@ $(call inherit-product, device/sony/castor_windy/aosp_sgp5xx_common.mk)
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.carrier=wifi-only
 
+# Device Init
+PRODUCT_PACKAGES += \
+    init.recovery.castor_windy \
+    init.castor_windy \
+    ueventd.castor_windy
+
+# Lights
+PRODUCT_PACKAGES += \
+    lights.castor_windy
+
+# Simple PowerHAL
+PRODUCT_PACKAGES += \
+    power.castor_windy
+
+# NFC config
+PRODUCT_PACKAGES += \
+    nfc_nci.castor_windy
+
 PRODUCT_NAME := aosp_sgp511
 PRODUCT_DEVICE := castor_windy
 PRODUCT_MODEL := Xperia Z2 Tablet WiFi(AOSP)
