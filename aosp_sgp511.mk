@@ -39,7 +39,7 @@ PRODUCT_PACKAGES += \
 
 # NFC config
 PRODUCT_PACKAGES += \
-    nfc_nci.castor_windy
+    nfc_nci.pn54x.default
 
 PRODUCT_NAME := aosp_sgp511
 PRODUCT_DEVICE := castor_windy
